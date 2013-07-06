@@ -10,8 +10,9 @@
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css(array('bootstrap.min','font-awesome.min','bootswatch','style'));
+		echo $this->Html->css(array('global','bootstrap.min','font-awesome.min','bootswatch','style'));
 
+		echo $this->Html->script(array('jquery-1.9.1','slides.min.jquery'));
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');

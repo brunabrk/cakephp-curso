@@ -29,12 +29,14 @@
 	Router::connect('/sobre-evento',array('controller'=>'pages','action'=>'display','sobre-evento'));
 	
 	Router::connect('/inscricao-sucesso', array('controller' => 'pages', 'action' => 'display','inscricao-sucesso'));
-	
+
 	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'sobre-evento'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/como-chegar', array('controller' => 'pages', 'action' => 'display','como-chegar'));
+
+	Router::connect('/galeria', array('controller' => 'pages', 'action' => 'display','galeria'));
 
 	Router::connect('/pagina/*', array('controller' => 'pages', 'action' => 'display'));
 	
