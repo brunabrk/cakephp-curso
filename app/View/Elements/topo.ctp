@@ -1,7 +1,11 @@
 <div class="navbar navbar-fixed-top">
    	<div class="navbar-inner">
      <div class="container" style="width: 85%;">
-
+       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </a>
        <?php echo $this->Html->link('CookCake','/',array('class'=>'brand'))?> 
 
        <div class="nav-collapse collapse" id="main-menu">

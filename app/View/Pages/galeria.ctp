@@ -48,6 +48,8 @@
 		</div>
 	</div>
 </div>
+
+<!-- Plugin slide - -->
 <script>
 	$(function(){
 		$('#slides').slides({
