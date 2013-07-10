@@ -6,4 +6,4 @@
         <p><?php echo $message?></p>
       </div>
   </div>
- </div>
+</div>

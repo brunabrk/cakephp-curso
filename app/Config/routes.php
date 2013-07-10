@@ -42,6 +42,13 @@
 	
 	Router::connect('/inscrever', array('controller' => 'inscricoes', 'action' => 'inscrever','inscrever'));
 	
+	Router::connect('/palestrante', array('controller'=>'palestrantes', 'action'=>'index'));
+	Router::connect('/palestrante/:nome/:id', array('controller'=>'palestrantes', 'action'=>'view'),
+		array(
+			'pass'=>array('id'),
+			'titulo'=>'[a-z0-9-]+',
+			'id'=>'[0-9]+'
+		));
 	
 
 /**

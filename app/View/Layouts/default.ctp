@@ -22,11 +22,14 @@
 </head>
 <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80" style="margin-top: 0px;">
 
-	<?php //echo $this->Session->flash(); ?>
-
 	<?php echo $this->element('topo')?>
 
-	<?php echo $this->fetch('content'); ?>
+	<div class="container">
+
+		<?php echo $this->Session->flash(); ?>
+		<?php  echo $this->fetch('content'); ?>
+
+	</div>
 
 	<?php echo $this->element('rodape',array('autora'=>'Bruna Chagas'))?>
 

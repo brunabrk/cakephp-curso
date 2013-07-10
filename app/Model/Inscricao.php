@@ -6,11 +6,45 @@ class inscricao extends AppModel{
 	public $order = array('nome'=>'ASC');
 
 	public $validate = array(
+		'nome' => array(
+			'rule' => 'notempty',
+			'message' => 'Nome é obrigatório!'
+		),
 
 		'email'=> array(
-			'email' => array(
-				'rule' => array('email','notempty'),
+			array(
+				'rule' => 'email',
 				'message' => 'Email inválido.',
+			),
+			array(
+				'rule'=> 'notempty',
+				'message' =>'Email é obrigatório'
+			),
+			array(
+				'rule' => 'isUnique',
+				'message' => 'Email já cadastrado!'
+			)
+		),
+
+		'telefone' => array(
+			array(
+			'rule' => 'notempty',
+			'message' => 'Telefone é obrigatório!'
+			),
+			array(
+				'rule' => 'numeric',
+				'message' => 'Telefone inválido.'
+			)
+		),
+
+		'endereco' => array(
+			array(
+				'rule'=>'notempty',
+				'message'=>'Campo obrigatório.'
+			),
+			array(
+				'rule'=>array('minLength','11'),
+				'message' => 'Mínimo 11 caracteres.'
 			)
 		)
 	);
